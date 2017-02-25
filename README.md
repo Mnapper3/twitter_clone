@@ -7,18 +7,46 @@
     ----------------------------------------------------------------- 
 
 
-Welcome to your Rails project on Cloud9 IDE!
+set up github repo
 
-To get started, just do the following:
+# Ruby on Rails Tutorial sample application
 
-1. Run the project with the "Run Project" button in the menu bar on top of the IDE.
-2. Preview your new app by clicking on the URL that appears in the Run panel below (https://twitter-clone-nappdaddy2000.c9users.io/).
+This is the sample application for
+[*Ruby on Rails Tutorial:
+Learn Web Development with Rails*](http://www.railstutorial.org/)
+by [Michael Hartl](http://www.michaelhartl.com/).
 
-Happy coding!
-The Cloud9 IDE team
+## License
 
+All source code in the [Ruby on Rails Tutorial](http://railstutorial.org/)
+is available jointly under the MIT License and the Beerware License. See
+[LICENSE.md](LICENSE.md) for details.
 
-## Support & Documentation
+## Getting started
 
-Visit http://docs.c9.io for support, or to learn more about using Cloud9 IDE. 
-To watch some training videos, visit http://www.youtube.com/user/c9ide
+To get started with the app, clone the repo and then install the needed gems:
+
+```
+$ bundle install --without production
+```
+
+Next, migrate the database:
+
+```
+$ rails db:migrate
+```
+
+Finally, run the test suite to verify that everything is working correctly:
+
+```
+$ rails test
+```
+
+If the test suite passes, you'll be ready to run the app in a local server:
+
+```
+$ rails server
+```
+
+For more information, see the
+[*Ruby on Rails Tutorial* book](http://www.railstutorial.org/book).
